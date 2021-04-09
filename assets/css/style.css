@@ -46,7 +46,6 @@ h3 {
 
 
 
-
 /*---THE GAME PAGE---*/
 
 /*---Deck---*/
@@ -107,7 +106,6 @@ h3 {
     font-size: 50px;
     transform: rotateX(0deg);
     transition: all .2s ease-out;
-
 }
 
 
@@ -180,8 +178,6 @@ h3 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-
-
 }
 
 .modal-content {
@@ -226,4 +222,34 @@ h3 {
 #button-restart:hover,
 #button-restart:focus {
     cursor: pointer;
+}
+
+/*---Media Queries---*/
+
+@media only screen and (max-width: 767px) {
+    .deck {
+        min-height: 500px;
+    }
+
+    .deck .card.show,
+    .deck .card.match {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .deck {
+        min-height: 350px;
+    }
+
+    .deck .card.show,
+    .deck .card.match {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .deck {
+        min-height: 300px;
+    }
 }
