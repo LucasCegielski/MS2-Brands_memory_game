@@ -27,3 +27,18 @@ Aim of this project is to create a memory game using standard HTML and CSS struc
 5. [Bugs](#bugs)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
+
+# User Experience
+
+## User Stories
+
+- ### First Time Visitor Goals
+    1. As a First Time Visitor, I want to be able to navigate the website with ease.
+    2. As a First Time Visitor, I want to be able to find out how the game works.
+    3. As a First Time Visitor, I want to be able to play the game.
+    4. As a First Time Visitor, I want to be able to find out what my score is at the end of the game.
+
+- ### Returning Visitor Goals
+    1. As a Returning Visitor, I want to play the game and get better at it.
+    2. As a Returning Visitor, I want to be able to beat my own time.
+    3. As a Returning Visitor, I want to be able to beat my own score.
