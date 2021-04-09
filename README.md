@@ -79,3 +79,61 @@ The colors and the music theme were chosen to brighten up the day of any user.
 - Wireframe of this application can be seen in the documentation folder in this project in .jpg file.
 
 [Top](#table-of-content)
+# Features
+
+This application allows users to easy navigate between the game and all it's features:
+
+## Existing Features
+
+- **Instructions** - the home page of the project displays game instructions to a user.
+
+- **Play** - function available from the home page, allowing user to beging the game.
+
+- **Mute / Unmute** - allows user to turn the music on or off, depending on their preferences.
+
+- **Github** - link that allows user to access my Github repository and find my other projects.
+
+- **Score** - simple count of points achived in the game.
+
+- **Moves** - simple count of clicks in the game.
+
+- **Time** - timer showing the amount of time spent playing the game.
+
+## Features Left to Implement
+
+- **Leaderboard** - feature will be added, allowing users to keep track of the overall score achived in this game.
+
+- **Invite friend** - feature will be added, allowing user to invite friends to play the game.
+
+[Top](#table-of-content)
+# Technologies Used
+
+## Technologies
+
+- [Figma](https://www.figma.com/)
+    - to provide wireframe.
+
+- [IcoFont](https://icofont.com/)
+    - to provide icons to the website.
+
+- [Google Fonts](https://fonts.google.com/)
+    - to provide free font to the website.
+
+- [Freeformatter](https://www.freeformatter.com/html-formatter.html)
+    - to beautify the HTML code.
+
+- [W3C Validator](https://validator.w3.org/nu/#textarea)
+    - to validate HTML code.
+
+- [Jigsaw W3C Validator](https://jigsaw.w3.org/css-validator/validator)
+    - to validate CSS code by input.
+
+- [Am I responsive](http://ami.responsivedesign.is/#)
+    - to test mobile devices responsiveness of my website.
+
+- [Techsini](https://techsini.com/multi-mockup/)
+    - to create this project mockup, of which image is placed at the very top of this readme file.
+    
+[Top](#table-of-content)
+
+
