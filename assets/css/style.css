@@ -43,3 +43,125 @@ h3 {
     font-size: large;
     text-align: center;
 }
+
+
+
+
+/*---THE GAME PAGE---*/
+
+/*---Deck---*/
+
+.deck {
+    width: 50%;
+    min-height: 680px;
+    background: #CBC507;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 48px;
+}
+
+.deck .card {
+    width: 20%;
+    background: #5F0B78;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 1%;
+}
+
+.deck .card:after {
+    content: '';
+    padding-top: 100%;
+}
+
+.deck .card.open {
+    transform: rotateX(0);
+    background: #B2A103;
+    cursor: default;
+    transition: background 0.2s;
+}
+
+.not-shown {
+    transform: rotateX(0);
+}
+
+@media (hover: hover) {
+    .not-shown:hover {
+        background: #E5D5B1;
+        transform: scale(1.1);
+        transition: all 0.05s;
+        transform: rotateX(180deg);
+    }
+}
+
+
+.deck .card.show {
+    font-size: 50px;
+    transform: rotateX(0deg);
+    transition: all .2s ease-out;
+
+}
+
+
+.deck .card.match {
+    cursor: default;
+    background: #E5D5B1;
+    font-size: 33px;
+    transition: background 0.2s;
+    transform: skewX(180deg);
+}
+
+#deck .red-wrong {
+    background-color: red;
+}
+
+/*---Score Panel---*/
+
+.score-panel {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    display: flex;
+    color: #CBC507;
+    font-size: xx-large;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    margin: 0 5px 0 0;
+    width: 20%;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+}
+
+.score-panel .moves {
+    width: 20%;
+}
+
+.score-panel .timer {
+    width: 20%;
+}
+
+.score-panel .github {
+    color: #CBC507;
+    width: 20%;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+    width: 20%;
+}
