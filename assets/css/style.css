@@ -165,3 +165,65 @@ h3 {
     cursor: pointer;
     width: 20%;
 }
+
+/*---Modal---*/
+
+#success-modal {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+
+.modal-content {
+    background: #E5D5B1;
+    padding: 1% 5% 5% 5%;
+}
+
+.modal-style {
+    background: #5F0B78;
+    margin: 5% auto;
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.close-button {
+    float: center;
+    font-size: 35px;
+    color: grey;
+    padding-top: 3%;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-content p {
+    margin-bottom: 10%;
+}
+
+#button-restart {
+    margin-bottom: 0%;
+    background: #CBC507;
+    border-radius: 8px;
+    color: #5F0B78;
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#button-restart:hover,
+#button-restart:focus {
+    cursor: pointer;
+}
