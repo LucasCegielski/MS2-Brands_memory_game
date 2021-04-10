@@ -73,3 +73,16 @@ function updateMoveCount() {
     }
     adjustStars();
 }
+
+function matchCards() {
+
+    matchedCount += 1;
+    setTimeout(function () {
+        matchingCards = document.querySelectorAll(".show");
+        for (let i = 0; i < matchingCards.length; i++) {
+            matchingCards[i].className = "card match";
+        }
+        console.log(matchingCards);
+        checkIfWon();
+    }, 1000);
+}
