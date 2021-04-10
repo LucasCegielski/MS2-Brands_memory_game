@@ -64,6 +64,8 @@ document.body.addEventListener('click', function (e) {
     }
 });
 
+// Functions
+
 function updateMoveCount() {
     moveCount += 1;
     if (moveCount === 1) {
@@ -85,4 +87,146 @@ function matchCards() {
         console.log(matchingCards);
         checkIfWon();
     }, 1000);
+}
+
+function hideCards() {
+    openCards = [];
+    displayedCards = document.querySelectorAll(".show");
+    setTimeout(function () {
+        for (let i = 0; i < displayedCards.length; i++) {
+            displayedCards[i].className += " red-wrong";
+        }
+    }, 1000);
+
+    setTimeout(function () {
+        console.log(displayedCards);
+        for (let i = 0; i < displayedCards.length; i++) {
+            displayedCards[i].className = "card not-shown";
+        }
+    }, 3000);
+    updateMoveCount();
+
+}
+
+function revealCard(e) {
+    e.target.classList.add('show', 'open');
+    e.target.classList.remove('not-shown');
+}
+
+function addOpenCard(e) {
+    let classMatch = e.target.querySelector('i').className;
+    openCards.push(classMatch);
+}
+
+function checkIfWon() {
+    if (matchedCount === 8) {
+        stopTimer();
+        successModal.style.display = 'block';
+        document.getElementById('success-message').innerHTML = "You win! You completed the game in " + moveCount + " moves in a time of " + completedTime + "!";
+        if (moveCount > 0 && moveCount < 13) {
+            document.getElementById('star-rating-message').innerHTML = "<i class='fa fa-star'><i class='fa fa-star'><i class='fa fa-star'>";
+        }
+        if (moveCount > 13 && moveCount < 19) {
+            document.getElementById('star-rating-message').innerHTML = "<i class='fa fa-star'><i class='fa fa-star'>";
+        }
+        if (moveCount > 19 && moveCount < 26) {
+            document.getElementById('star-rating-message').innerHTML = "<i class='fa fa-star'>";
+        }
+        if (moveCount > 26) {
+            document.getElementById('star-rating-message').innerHTML = "...no stars. Try and complete in less moves next time.";
+        }
+    }
+    closeModal();
+}
+
+function playAgain() {
+    playAgainButton.addEventListener('click', restartGame);
+    displayTimer.textContent = "0:00";
+}
+
+function closeModal() {
+    closeModalButton.addEventListener('click', function () {
+        successModal.style.display = 'none';
+    });
+    window.addEventListener('click', windowCloseModal);
+    playAgain();
+}
+
+function windowCloseModal(e) {
+    if (e.target == successModal) {
+        successModal.style.display = 'none';
+    }
+}
+
+function restartGame() {
+    for (let i = 0; i < allCards.length; i++) {
+        allCards[i].className = "card not-shown";
+    }
+
+    shuffleCards();
+    moveCount = 0;
+    document.getElementById("moves-made").innerHTML = moveCount;
+    openCards = [];
+    matchedCards = [];
+    matchingCards = '';
+    displayedCards = '';
+    successModal.style.display = 'none';
+    stopTimer();
+    displayTimer.textContent = "0:00";
+    document.getElementById("moves-made").innerHTML = moveCount + " Moves";
+}
+
+const displayTimer = document.querySelector('#timer');
+let clock;
+let timerStart;
+let timeNow;
+let timerEnd;
+let secondsElapsed;
+let minutesElapsed;
+let secondsRounded;
+let secondsFormatted;
+let timeElapsed;
+let completedTime;
+let clickToRun;
+
+function runTimer() {
+    timerStart = Date.now();
+    clock = setInterval(function () {
+        displayTime(clock);
+    }, 1000)
+
+    document.removeEventListener('click', runTimer);
+}
+
+function stopTimer() {
+
+    clearInterval(clock);
+    completedTime = document.querySelector('#timer').textContent;
+}
+
+function displayTime(clock) {
+    timeNow = Date.now();
+    secondsElapsed = (timeNow - timerStart) / 1000;
+    minutesElapsed = Math.floor(secondsElapsed / 60);
+    secondsRounded = Math.floor(secondsElapsed % 60);
+    secondsFormatted = secondsRounded < 10 ? '0' + secondsRounded : secondsRounded;
+    timeElapsed = minutesElapsed + ":" + secondsFormatted;
+    displayTimer.textContent = timeElapsed;
+}
+
+const starRating = document.getElementsByClassName('stars')[0];
+
+function adjustStars() {
+    if (moveCount > 12) {
+        starRating.innerHTML = "<li><i class='fa fa-star'></i></li><li><i class='fa fa-star'></i></li>";
+    }
+    if (moveCount > 18) {
+        starRating.innerHTML = "<li><i class='fa fa-star'></i></li>";
+    }
+    if (moveCount > 25) {
+        starRating.innerHTML = "<li><i class='fa fa-star-half'></i></li>";
+    }
+    if (moveCount > 27) {
+        starRating.innerHTML = "<li><i>...</i></li>";
+    }
 }
