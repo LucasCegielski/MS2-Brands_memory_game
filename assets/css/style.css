@@ -44,6 +44,34 @@ h3 {
     text-align: center;
 }
 
+/*---THE HOME PAGE---*/
+
+/*---Text content box---*/
+.box {
+    width: 75%;
+    min-height: 680px;
+    background: #CBC507;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.welcome {
+    color: black;
+    text-align: center;
+}
+
+/*---Play the game button---*/
+
+.button {
+    align-items: center;
+}
 
 
 /*---THE GAME PAGE---*/
