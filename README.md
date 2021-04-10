@@ -74,7 +74,9 @@ The colors and the music theme were chosen to brighten up the day of any user.
 
 ## Wireframe
 
-- Wireframe was developed using [Figma](https://www.figma.com/)
+- Wireframe was developed using [Figma](https://www.figma.com/).
+
+- Files saved from Figma, were converted from .fig into .jpg file with use of [Filestar](https://filestar.com/) application.
 
 - Wireframe of this application can be seen in the documentation folder in this project in .jpg file.
 
@@ -89,7 +91,7 @@ This application allows users to easy navigate between the game and all it's fea
 
 - **Play** - function available from the home page, allowing user to beging the game.
 
-- **Mute / Unmute** - allows user to turn the music on or off, depending on their preferences.
+- **Play Music** - Tune starts playing when the page is first open. Controls panel allows user to turn the music on or off, to pause the music and even download the track.
 
 - **Github** - link that allows user to access my Github repository and find my other projects.
 
@@ -113,11 +115,14 @@ This application allows users to easy navigate between the game and all it's fea
 - [Figma](https://www.figma.com/)
     - to provide wireframe.
 
-- [IcoFont](https://icofont.com/)
-    - to provide icons to the website.
+- [Filestar](https://filestar.com/)
+    - to convert the wireframe file from .fig to .jpg.
+
+- [Fontawesome](https://fontawesome.com/)
+    - to provide icons to the game.
 
 - [Google Fonts](https://fonts.google.com/)
-    - to provide free font to the website.
+    - to provide free font to the app.
 
 - [Freeformatter](https://www.freeformatter.com/html-formatter.html)
     - to beautify the HTML code.
