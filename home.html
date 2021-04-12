@@ -15,31 +15,37 @@
 <body>
     <div class="container">
         <div class="box">
-            <h1 class="welcome">Welcome to my Memory Game!</h1>
-            <h2 class="rules">RULES</h2>
-            <p>
-                <br>1. You need to find the pair of matching images.
-                <br>2. Images remain flipped when matched.
-                <br>3. Match all the images in as little moves as possible.
-                <br>4. Score is summarized at the end of the game.
-                <br>5. Timer shows you the amount of time in which the game is completed.
-            </p>
-            <h2>FEATURES</h2>
-            <p>You can turn the music ON or OFF <br>by clicking on the speaker icon at the bottom.</p>
-            <p>Whenever you are ready, just hit the button below and let’s get started.<br>Enjoy! </p>
-            <p><button class="button"><a href="index.html">
-                        <h3>Play a game!</h3>
-                    </a></button></p>
-            <audio controls autoplay mute>
-                <source src="assets/music/music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="title">
+                <h2>Welcome to my Memory Game!</h2>
+                <h2>RULES</h2>
+            </div>
+
+            <div>
+                <p>
+                    <br>1. You need to find the pair of matching images.
+                    <br>2. Images remain flipped when matched.
+                    <br>3. Match all the images in as little moves as possible.
+                    <br>4. Score is summarized at the end of the game.
+                    <br>5. Timer shows you the amount of time in which the game is completed.
+                </p>
+            </div>
+
+            <div>
+                <p>Whenever you are ready, just hit the button below and let’s get started.<br>Enjoy! </p>
+                <p><button class="play-button"><a href="index.html">
+                            <h3>Play a game!</h3>
+                        </a></button></p>
+            </div>
+            <! ---audio module taken from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio --->
+                <div class="audio">
+                    <audio controls autoplay mute>
+                        <source src="assets/music/music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
 
         </div>
-
-
-    </div>
-    <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
