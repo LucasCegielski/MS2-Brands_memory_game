@@ -62,15 +62,26 @@ h3 {
     text-align: center;
 }
 
-.welcome {
-    color: black;
+.box .h1 {
+    color: #5F0B78;
     text-align: center;
 }
 
 /*---Play the game button---*/
 
-.button {
+.play-button {
     align-items: center;
+    margin: auto;
+    background-color: #5F0B78;
+}
+
+/*---Audio Controls---*/
+
+.audio {
+    color: #5F0B78;
+    align-items: center;
+    margin: auto;
+    display: block;
 }
 
 /*---THE GAME PAGE---*/
