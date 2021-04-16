@@ -233,6 +233,8 @@ function adjustStars() {
 
 /*---------------------------- Instructions Page Modal Popup ----------------------------*/
 
+// Inspired by user RicharCodes on https://www.youtube.com/watch?v=gLWIYk0Sd38&t=42s
+
 document.getElementById('button').addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'flex';
