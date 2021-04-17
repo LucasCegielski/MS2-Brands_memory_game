@@ -1,3 +1,5 @@
+//Below code is own work hugely inspired by great Developers - see credits in README.md for mentions
+
 const listItems = document.getElementsByClassName("card");
 const arrListItems = Array.prototype.slice.call(listItems);
 const shuffledArray = shuffle(arrListItems);
@@ -11,7 +13,7 @@ function shuffleCards() {
     document.getElementById("deck").innerHTML = newList;
 }
 
-// Shuffle function from http://stackoverflow.com/a/2450976
+// Shuffle function from http://stackoverflow.com/a/245097
 function shuffle(array) {
     var currentIndex = array.length,
         temporaryValue, randomIndex;
@@ -65,7 +67,6 @@ document.body.addEventListener('click', function (e) {
 });
 
 // Functions
-
 function updateMoveCount() {
     moveCount += 1;
     if (moveCount === 1) {
@@ -105,7 +106,6 @@ function hideCards() {
         }
     }, 3000);
     updateMoveCount();
-
 }
 
 function revealCard(e) {
@@ -176,6 +176,7 @@ function restartGame() {
     document.getElementById("moves-made").innerHTML = moveCount + " Moves";
 }
 
+// Timer
 const displayTimer = document.querySelector('#timer');
 let clock;
 let timerStart;
@@ -193,7 +194,7 @@ function runTimer() {
     timerStart = Date.now();
     clock = setInterval(function () {
         displayTime(clock);
-    }, 1000)
+    }, 1000);
 
     document.removeEventListener('click', runTimer);
 }
@@ -241,5 +242,5 @@ document.getElementById('button').addEventListener('click',
     });
 document.querySelector('.close').addEventListener('click',
     function () {
-        document.querySelector('.bg-modal').style.display = 'none'
+        document.querySelector('.bg-modal').style.display = 'none';
     });
