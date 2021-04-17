@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Brands Memory Game</title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b3728a081.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Welcome Title -->
+        <header>
+            <h1>Find your matching brands!</h1>
+        </header>
+
+        <!-- Instructions Button / Popup Modal -->
+        <button id="button" class="instructions-button" data-modal-target="#modal">INSTRUCTIONS</button>
+
+        <!-- Deck Of Cards -->
+        <ul class="deck" id="deck">
+            <li class="card not-shown">
+                <i class="fa fa-amazon"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-yahoo"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-amazon"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-yahoo"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-paypal"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-facebook-square"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-paypal"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-twitter"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-google"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-twitter"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-cc-visa"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-google"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-facebook-square"></i>
+            </li>
+            <li class="card not-shown">
+                <i class="fa fa-cc-visa"></i>
+            </li>
+        </ul>
+        <!-- Score Panel -->
+        <section class="score-panel">
+
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            <div class="moves">
+                <span id="moves-made">0 Moves </span>
+            </div>
+
+
+            <div class="timer">
+                <span id="timer">
+                    0:00
+                </span>
+            </div>
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+    </div>
+
+    <!-- The Instructions Modal -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">X</div>
+            <p>
+                <br>1. You need to find the pair of matching images.
+                <br>2. Images remain flipped when matched.
+                <br>3. Match all the images in as little moves as possible.
+                <br>4. Score is summarized at the end of the game.
+                <br>5. Timer shows you the amount of time in which the game is completed.
+                <br>BEST OF LUCK!!!
+            </p>
+        </div>
+    </div>
+    <!-- The Success Modal -->
+    <div id="success-modal" class="modal">
+        <div id="modal-content" class="modal-style">
+            <div class="success-modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Well done you!</h2>
+                <p id="success-message">Test</p>
+                <div id="star-rating-message"></div>
+                <button id="button-restart">Go again?</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
