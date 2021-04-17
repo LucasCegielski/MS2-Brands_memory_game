@@ -1,6 +1,6 @@
-<h2 align="center">Code Institute Milestone Project 2 - Brands Memory Game</h2>
+<h1 align="center">Code Institute Milestone Project 2 - Brands Memory Game</h1>
 
-![Memory Game Mockup](assets/project/###.jpg)
+![Memory Game Mockup](assets/project/MS2Mockup.JPG)
 
 Click [here](https://lucascegielski.github.io/MS2-Brands_memory_game/) to see live project.
 
@@ -276,7 +276,7 @@ Most bugs were cleared thanks to all the people and communities mentioned in cre
 
 - In order to run this project locally, follow the below steps:
 
-    - Click on the [link](https://github.com/LucasCegielski/MS1-MiracleFromSoul) to this project's repository in GitHub (you must be logged into your own Github account).
+    - Click on the [link](https://github.com/LucasCegielski/MS2-Brands_memory_game) to this project's repository in GitHub (you must be logged into your own Github account).
     - Click on the dropdown menu Code button located next to green "Gitpod" button.
     - Click on "Open with GitHub Desktop" to clone and open the repository locally.
     - Click on the "Choose" option and navigate to the local path where the cloned repository should be located.
