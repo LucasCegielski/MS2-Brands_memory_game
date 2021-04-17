@@ -1,4 +1,4 @@
-<h1 align="center">Code Institute Milestone Project 2 - Brands Memory Game</h1>
+<h2 align="center">Code Institute Milestone Project 2 - Brands Memory Game</h2>
 
 ![Memory Game Mockup](assets/project/###.jpg)
 
